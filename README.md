@@ -64,6 +64,8 @@ ___Atenção! Caso você não tenha o MySQL instalado na sua máquina o projeto 
         - Monitoramento de logs
         - Frontend  
 
+![Rodando o projeto com o comando composer run dev](public/printsAtividade/rodandoProjeto.png)
+
 -----------
 
 ## Mexendo com o SQL
