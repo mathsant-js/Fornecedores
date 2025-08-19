@@ -19,6 +19,11 @@ return new class extends Migration
             $table->char('cnpj', length: 18)->unique();
             $table->timestamps();
         });
+
+        Schema::table('cadastro', function (Blueprint $table) {
+            $table->string('razao_social', length: 50);
+            $table->string('nome_fantasia', length: 75);
+        });
     }
 
     /**
