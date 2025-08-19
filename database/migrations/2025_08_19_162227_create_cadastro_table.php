@@ -12,11 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('cadastro', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('nome', length: 60);
+            $table->id('cadastro_id');
+            $table->string('nome', length: 75);
             $table->string('endereco', length: 120);
             $table->char('telefone', length: 15);
-            $table->char('cnpj', length: 18);
+            $table->char('cnpj', length: 18)->unique();
             $table->timestamps();
         });
     }
